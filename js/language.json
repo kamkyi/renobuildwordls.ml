@@ -1,0 +1,18 @@
+var translateLang={
+	  'en':{
+           'home':'Home',
+           'about':'About Us',
+           'gallery':'Gallery',
+           'news':'News',
+           'service':'Service',
+           'contact':'Contact Us'
+	  },
+	  'mm':{
+	  	    'home':'မူလ',
+	  	    'about':'အေၾကာင္းအရာ',
+	  	    'gallery':'ျပခန္း',
+	  	    'news':'သတင္း',
+	  	    'service':'၀န္ေဆာင္မွဴ',
+	  	    'contact':'ဆက္သြယ္ရန္'
+	  }
+};

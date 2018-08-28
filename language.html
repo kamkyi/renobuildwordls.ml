@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Language</title>
+</head>
+<body>
+
+	<!-- language tags -->
+	<ul>
+		  <li class="lang" key='home'>Home</li>
+		  <li class="lang" key='about'>About Us</li>
+		  <li class="lang" key="contact">Contact Us</li>
+	</ul>
+	<!-- language tags end -->
+
+<button class="translate" id='en'>English</button>
+<button class="translate" id='mm'>Myanmar</button>
+<!-- script  -->
+<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+
+		   var arrLang={
+		   	     'en':{
+		   	     	   'home':'Home',
+		   	     	   'about':'About Us',
+		   	     	   'contact':'Contact Us'
+		   	     },
+		   	     'mm':{
+                       'home':'အိမ္',
+		   	     	   'about':'အေၾကာင္း အရာ',
+		   	     	   'contact':'ဆက္သြယ္ရန္'
+		   	     }
+		   };
+	</script>
+	<script type="text/javascript">
+		   $(document).ready(function(){
+
+		   	           $('.translate').on('click',function(){
+
+		   	           	var language=$(this).attr('id');
+
+		   	           	          $('.lang').each(function(key,element){
+		   	           	          	             $(this).text(arrLang[language][$(this).attr('key')]);
+		   	           	          });       
+		   	           });
+		   });
+	</script>
+<!-- script end -->
+</body>
+</html>
